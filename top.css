@@ -1,0 +1,348 @@
+@font-face{
+    src: url("font/Mamelon.otf");
+    font-family: "マメロン";
+}
+
+@font-face{
+    src: url("font/Harenosora.otf");
+    font-family: "はれのそら明朝";
+}
+
+*{
+    letter-spacing: .1em;
+    margin: 0;
+    font-family: "游ゴシック体", YuGothic;
+}
+
+body{
+    color: rgb(63, 25, 0);
+    /* background-image: url(images/Mokume.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: top center; */
+    background-color: rgb(223, 212, 196);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body_container{
+    background-color: rgb(253, 252, 249);
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, .3));
+}
+
+.Top{
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.swiper-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swiper-gradient{
+    position: absolute;
+    top: .5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgb(252, 251, 246) 100%);
+    z-index: 0;
+}
+
+.swiper-slide{
+    position: relative;
+}
+
+.swiper_textBox{
+    position: relative;
+    display: flex;
+    color: #d35400;
+    justify-content: center;
+    margin-top: -120px;
+    z-index: 1;
+    font-size: 18px;
+    text-shadow: 0 0 5px #fff;
+}
+
+.swiper-pagination{
+    bottom: 60px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(63, 25, 0);
+}
+
+.Top_titleBox{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -50px;
+}
+
+.Top_titleImg{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.Top_subtitleImg{
+    width: 100px;
+}
+
+.Top_logo{
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    z-index: 999;
+    margin-bottom: 20px;
+}
+
+.Top_address{
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.Top__timeBox{
+    display: inline-block;
+}
+
+.Top_time--modifier{
+    display: flex;
+    font-size: 14px;
+}
+
+.Top_timeHeading--modifier{
+    margin-right: 10px;
+}
+
+
+
+
+
+.PageTitle--modifier::before{
+    content: "-";
+}
+
+.PageTitle--modifier{
+    font-family: "マメロン";
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: .3em;
+    margin-top: 50px; 
+    margin-bottom: 30px; 
+}
+
+.PageTitle--modifier::after{
+    content: "-";
+}
+
+
+
+.Concept{
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.Concept_greetingBox{
+    position: relative;
+    height: 100px;
+}
+
+.Concept_greeting{
+    position: absolute;
+    transform: rotate(-10deg);
+    font-family: "はれのそら明朝";
+    font-size: 20px;
+    letter-spacing: .5em;
+}
+
+.Concept_textBox{
+    display: flex;
+    justify-content: center;
+}
+
+.Concept_text{
+    font-size: 14px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+
+
+.Life_title{
+    margin-bottom: 5px;
+}
+
+.Life_subTitle{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.LifeContents_title{
+    font-size: 16px;
+}
+
+
+
+.News{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.News_articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.NewsTop{
+    margin-bottom: 30px;
+}
+
+.NewsTop_link,
+.NewsArticle_link{
+    display: flex;
+    flex-direction: column;
+    color: rgb(63, 25, 0);
+    text-decoration: none;
+}
+
+.NewsTop_title{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.NewsTop_text{
+    font-size: 14px;
+}
+
+.NewsTop_dateTagBox{
+    order: -1;
+    display: flex;
+    border-top: rgb(63, 25, 0) 1px solid;
+    border-bottom: rgb(63, 25, 0) 1px solid; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.NewsTop_date{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: rgb(63, 25, 0) 1px solid;
+}
+
+.NewsTop_tag{
+    padding-left: 20px;
+}
+
+
+
+.NewsArticle{
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.NewsArticle_title{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.NewsArticle_text{
+    font-size: 14px;
+}
+
+.NewsArticle_date{
+    text-align: center;
+    order: -1;
+    border-top: rgb(63, 25, 0) 1px solid;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.News_listLink{
+    display: inline-block;
+    border: 1px rgb(63, 25, 0) solid;
+    color: rgb(63, 25, 0);
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+
+
+
+
+.Access_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Access_IyasakaHouseImg{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.Profile_titleBox{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Profile_titleBox,
+.Profile_address,
+.Profile_detail--modifier{
+    margin-bottom: 5px;
+}
+
+.Profile_subtitle{
+    font-size: 14px;
+}
+
+.Profile_group--modifier:not(:last-child){
+    border-bottom: 1px rgb(63, 25, 0, .3) dashed;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.Profile_detail--modifier{
+    display: flex;
+}
+
+.Profile_detailHeading--modifier::after{
+    content: ":";
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+
+
+.Access_googleMapBox{
+    text-align: center;
+}
+
+.Access_googleMap{
+    width: 320px;
+    height: 240px;
+}
