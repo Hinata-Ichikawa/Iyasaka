@@ -51,3 +51,52 @@ var mySwiper = new Swiper ('.swiper-container', {
       el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
     }
   });
+
+  $('.slider').slick({
+    slidesToShow: 5,
+    centerMode: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0, //待ち時間を０に
+    speed: 10000, // スピードをゆっくり
+    swipe: false, // 操作による切り替えはさせない
+    cssEase: 'linear', // 切り替えイージングを'linear'に
+    // 以下、操作後に止まってしまう仕様の対策
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+   
+    // 以下、レスポンシブ
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+  // $('.Life_slider').slick({
+  //   slidesToShow: 5,
+  //   centerMode: true,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000, //待ち時間を０に
+  //   speed: 1000, // スピードをゆっくり
+  //   swipe: false, // 操作による切り替えはさせない
+  //   // 以下、操作後に止まってしまう仕様の対策
+  //   pauseOnFocus: false,
+  //   pauseOnHover: false,
+  //   pauseOnDotsHover: false,
+   
+  //   // 以下、レスポンシブ
+  //   responsive: [
+  //     {
+  //       breakpoint: 750,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       }
+  //     }
+  //   ]
+  // });

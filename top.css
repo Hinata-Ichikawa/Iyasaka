@@ -9,10 +9,10 @@
 }
 
 *{
-    letter-spacing: .1em;
+    letter-spacing: .15em;
     margin: 0;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 body{
@@ -22,16 +22,17 @@ body{
     background-repeat: repeat-y;
     background-position: top center; */
     background-color: rgb(223, 212, 196);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow-x: hidden;
 }
 
 .body_container{
     background-color: rgb(253, 252, 249);
     margin: 0 auto;
-    width: 90%;
+    width: 93%;
     border-radius: 10px;
-    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, .3));
+    /* filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, .3)); */
 }
 
 .Top{
@@ -40,12 +41,12 @@ body{
 
 .swiper-container {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
 }
 
 .swiper-image{
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -55,8 +56,8 @@ body{
     top: .5px;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgb(252, 251, 246) 100%);
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgb(252, 251, 246) 100%);
     z-index: 0;
 }
 
@@ -67,9 +68,9 @@ body{
 .swiper_textBox{
     position: relative;
     display: flex;
-    color: #d35400;
+    color: rgb(63, 25, 0);
     justify-content: center;
-    margin-top: -120px;
+    margin-top: -70px;
     z-index: 1;
     font-size: 18px;
     text-shadow: 0 0 5px #fff;
@@ -139,8 +140,8 @@ body{
     text-align: center;
     font-size: 20px;
     letter-spacing: .3em;
-    margin-top: 50px; 
-    margin-bottom: 30px; 
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .PageTitle--modifier::after{
@@ -149,10 +150,7 @@ body{
 
 
 
-.Concept{
-    padding-left: 10px;
-    padding-right: 10px; 
-}
+
 
 .Concept_greetingBox{
     position: relative;
@@ -165,7 +163,54 @@ body{
     font-family: "はれのそら明朝";
     font-size: 20px;
     letter-spacing: .5em;
+    left: 20px;
 }
+
+.Concept_imgBox{
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    height: 130px;
+}
+
+.Concept_loopImg{
+    border-radius: 50%;
+    display: block !important;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+
+
+.slick-slider{
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.Concept_loopList{
+    width: 180px !important;
+}
+
+/* .Concept_swiper-image1{
+    left: 0;
+}
+
+.Concept_swiper-image2{
+    left: 200px;
+}
+
+.Concept_swiper-image3{
+    left: 400px;
+}
+
+.Concept_swiper-image4{
+    left: 600px;
+}
+
+.Concept_swiper-image5{
+    left: 800px;
+} */
 
 .Concept_textBox{
     display: flex;
@@ -178,8 +223,19 @@ body{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     line-height: 3em;
-    font-weight: bold;
 }
+
+.Concept_textOtherColor{
+    color: rgb(184, 134, 11);
+    font-size: 15px;
+    letter-spacing: .15em;
+}
+
+
+
+
+
+
 
 
 
@@ -189,21 +245,90 @@ body{
 
 .Life_subTitle{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
+.LifeContents{
+    position: relative;
+    height: 320px;
+}
+
+.LifeContents_textBox{
+    position: absolute;
+    width: 75%;
+    right: 0;
+    top: 200px;
+    background-color: rgba(255, 255, 255);
+    padding: 10px;
+    z-index: 5;
+}
+
+.LifeContents:nth-child(even) .LifeContents_textBox{
+    left: 0;
+}
 
 
 .LifeContents_title{
     font-size: 16px;
+    color: rgb(184, 134, 11);
+    letter-spacing: .15em;
 }
+
+.LifeContents_text{
+    font-size: 12px;
+}
+
+.LifeContents_eatImgBox{
+    position: absolute;
+    width: 90%;
+    height: 230px;
+}
+
+.LifeContents:nth-child(odd) .LifeContents_eatImgBox{
+    left: 0;
+}
+
+.LifeContents:nth-child(even) .LifeContents_eatImgBox{
+    right: 0;
+}
+
+.LifeContents_eatImg{
+  box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 2px dashed rgb(184, 134, 11, .5);
+    border-right: 2px dashed rgb(184, 134, 11, .5);
+    border-bottom: 2px dashed rgb(184, 134, 11, .5);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.LifeContents:nth-child(even) .LifeContents_eatImg{
+    border-left: 2px dashed rgb(184, 134, 11, .5);
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+/* .LifeContents_bgColor{
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  background-color: rgb(184, 134, 11);
+} */
+
+
+
 
 
 
 .News{
     text-align: center;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 .News_articles{
@@ -214,7 +339,8 @@ body{
 }
 
 .NewsTop{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 .NewsTop_link,
@@ -223,6 +349,8 @@ body{
     flex-direction: column;
     color: rgb(63, 25, 0);
     text-decoration: none;
+    position: relative;
+    width: 100%;
 }
 
 .NewsTop_title{
@@ -230,18 +358,24 @@ body{
     margin-bottom: 5px;
 }
 
-.NewsTop_text{
-    font-size: 14px;
+.NewsTop_text,
+.NewsArticle_text{
+    width: 100%;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .NewsTop_dateTagBox{
-    order: -1;
+    order: -2;
     display: flex;
     border-top: rgb(63, 25, 0) 1px solid;
-    border-bottom: rgb(63, 25, 0) 1px solid; 
+    border-bottom: rgb(63, 25, 0) 1px solid;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .NewsTop_date{
@@ -253,6 +387,18 @@ body{
 .NewsTop_tag{
     padding-left: 20px;
 }
+
+.NewsTop_img{
+    order: -1;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+
+
 
 
 
@@ -267,15 +413,15 @@ body{
 }
 
 .NewsArticle_text{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .NewsArticle_date{
     text-align: center;
-    order: -1;
+    order: -2;
     border-top: rgb(63, 25, 0) 1px solid;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
@@ -286,6 +432,14 @@ body{
     color: rgb(63, 25, 0);
     text-decoration: none;
     padding: 5px 15px;
+}
+
+.NewsArticle_img{
+    order: -1;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 
@@ -314,6 +468,11 @@ body{
 .Profile_address,
 .Profile_detail--modifier{
     margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.Profile_title{
+    font-size: 20px;
 }
 
 .Profile_subtitle{
@@ -346,4 +505,20 @@ body{
 .Access_googleMap{
     width: 320px;
     height: 240px;
+}
+
+.Access_linkBox{
+    text-align: center;
+}
+
+.Access_link{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(63, 25, 0);
+    color: rgb(252, 251, 246);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

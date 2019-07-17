@@ -27,6 +27,9 @@
 <link rel="icon" href="favicon-192x192.png" sizes="192x192" type="image/png"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 
+<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="slick/slick.css" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" href="top.css">
 <!-- <link rel="stylesheet" href="css/sp.css"> -->
 <!-- <link rel="stylesheet" media="(min-width: 768px) and (min-height: 400px)" href="css/pc.css"> -->
@@ -40,7 +43,7 @@
                 <div class="swiper-wrapper">
                     <!-- 各スライド -->
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/slick1.jpg" alt="">
+                        <img class="swiper-image" src="images/top1.jpg" alt="">
                         <div class="swiper-gradient"></div>
                         <dl class="swiper_textBox">
                             <dt class="swiper_time">8:00</dt>
@@ -48,38 +51,38 @@
                         </dl>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/slick2.jpg" alt="">
-                        <div class="swiper-gradient"></div>
-                        <dl class="swiper_textBox">
-                            <dt class="swiper_time">8:00</dt>
-                            <dd>お迎え</dd>
-                        </dl>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-image" src="images/slick1.jpg" alt="">
+                        <img class="swiper-image" src="images/top2.jpg" alt="">
                         <div class="swiper-gradient"></div>
                         <dl class="swiper_textBox">
                             <dt class="swiper_time">9:00</dt>
+                            <dd>お迎え</dd>
+                        </dl>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-image" src="images/top3.jpg" alt="">
+                        <div class="swiper-gradient"></div>
+                        <dl class="swiper_textBox">
+                            <dt class="swiper_time">10:00</dt>
                             <dd>ああああああ</dd>
                         </dl>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/slick2.jpg" alt="">
+                        <img class="swiper-image" src="images/top4.jpg" alt="">
                         <div class="swiper-gradient"></div>
                         <dl class="swiper_textBox">
-                            <dt class="swiper_time">8:00</dt>
+                            <dt class="swiper_time">11:00</dt>
                             <dd>お迎え</dd>
                         </dl>
                     </div>
                 </div>
-            
+
                 <!-- ページネーションを表示する場合 -->
                 <div class="swiper-pagination"></div>
-            
+
                 <!-- 前後スライドへのナビゲーションボタン(矢印)を表示する場合 -->
                 <!-- <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div> -->
-            
+
                 <!-- スクロールバーを表示する場合 -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
@@ -107,14 +110,22 @@
             <div class="Concept_greetingBox">
                 <p class="Concept_greeting">初めまして。<br>いやさかです。</p>
             </div>
+            <ul class="slider">
+                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat1.jpg" alt="image01"></li>
+                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat2.jpg" alt="image02"></li>
+                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat3.jpg" alt="image03"></li>
+                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat4.jpg" alt="image04"></li>
+                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat5.jpg" alt="image05"></li>
+            </ul>
             <div class="Concept_textBox">
-                <p class="Concept_text">いやさかでは、人と人との関わりを大切にしています。<br>
-                    スタッフだけでなく、地域の方々と関わりを広げ、<br>
-                    たくさんの人に楽しんで頂ける場所を<br>
-                    作っていきたいと思っています。<br>
-                    助け合いや和気あいあいとした雰囲気。<br>
-                    何気ない会話ができること、みんなで笑い合える<br>
-                    幸せをを日々大切にしています。
+                <p class="Concept_text">
+                    いやさかでは、<span class="Concept_textOtherColor">人と人との関わりを大切に</span>しています。<br>
+                    地域の行事に参加することで、スタッフだけでなく<br>
+                    地域の方や子供との関わりを広げ、たくさんの人に<br>
+                    楽しんで頂ける場所を作っていきたいと思っています。<br>
+                    また、<span class="Concept_textOtherColor">暖かな家庭料理</span>をお出しすること、<br>
+                    ピクニックなどの、様々なイベントを行うことで、<br>
+                    <span class="Concept_textOtherColor">みんなで笑い合える、第二の家</span>を目指しています。
                 </p>
             </div>
         </section>
@@ -122,14 +133,27 @@
             <h1 class="PageTitle--modifier Life_title">いやさかの日常</h1>
             <p class="Life_subTitle">日々サポーターさんと一緒に作る日常風景</p>
             <section class="LifeContents">
-                <h1 class="LifeContents_title">食べること</h1>
+                <div class="LifeContents_textBox">
+                    <h1 class="LifeContents_title">あたたかくて美味しいごはん</h1>
+                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+                </div>
+                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/eat/eat2.jpg" alt=""></p>
             </section>
             <section class="LifeContents">
-                <h1 class="LifeContents_title">楽しむこと</h1>
+                <div class="LifeContents_textBox">
+                    <h1 class="LifeContents_title">美味しくてあたたかいごはん</h1>
+                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+                </div>
+                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/life.jpg" alt=""></p>
             </section>
             <section class="LifeContents">
-                <h1 class="LifeContents_title">共に過ごすこと</h1>
+                <div class="LifeContents_textBox">
+                    <h1 class="LifeContents_title">美味しくてあたたかいごはん</h1>
+                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+                </div>
+                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/life2.jpg" alt=""></p>
             </section>
+            <div class="LifeContents_bgColor"></div>
         </section>
         <section class="News">
             <h1 class="PageTitle--modifier">お知らせ</h1>
@@ -142,6 +166,7 @@
                         <time class="NewsTop_date" datetime="2019-07-03">3 July 2019</time>
                         <p class="NewsTop_tag">NEWS</p>
                     </div>
+                    <img class="NewsTop_img" src="images/slick1.jpg" alt="">
                 </a>
                 </article>
                 <article class="NewsArticle">
@@ -149,6 +174,7 @@
                         <h1 class="NewsArticle_title">ホームページができました！</h1>
                         <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                         <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                        <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                     </a>
                 </article>
                 <article class="NewsArticle">
@@ -156,10 +182,11 @@
                         <h1 class="NewsArticle_title">ホームページができました！</h1>
                         <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                         <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                        <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                     </a>
                 </article>
             </div>
-            <a class="News_listLink" href="">お知らせリスト</a>
+            <!-- <a class="News_listLink" href="">お知らせリスト</a> -->
         </section>
         <section class="Access">
             <h1 class="PageTitle--modifier">アクセス</h1>
@@ -206,9 +233,15 @@
             <div class="Access_googleMapBox">
                 <iframe class="Access_googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3980489253763!2d136.51260670376584!3d34.72045202251259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60040cd2e8c9b273%3A0x83aea2e6ed26478a!2z44CSNTE0LTAwMjcg5LiJ6YeN55yM5rSl5biC5aSn6ZaA77yS77yZ4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1562671287185!5m2!1sja!2sjp" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+            <div class="Access_linkBox">
+                <a class="Access_link" href="http://maps.google.com/maps?q=三重県津市大門29-18" target="_blank">マップで経路を調べる</a>
+            </div>
         </section>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/top.js"></script>
 </body>
