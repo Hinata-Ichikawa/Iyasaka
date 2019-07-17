@@ -30,7 +30,7 @@ body{
 .body_container{
     background-color: rgb(253, 252, 249);
     margin: 0 auto;
-    width: 93%;
+    width: 95%;
     border-radius: 10px;
     /* filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, .3)); */
 }
@@ -270,8 +270,8 @@ body{
 
 
 .LifeContents_title{
-    font-size: 16px;
-    color: rgb(184, 134, 11);
+    font-size: 14px;
+    /* color: rgb(184, 134, 11); */
     letter-spacing: .15em;
 }
 
