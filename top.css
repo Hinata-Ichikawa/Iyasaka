@@ -111,7 +111,7 @@ body{
 
 .Top_address{
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .Top__timeBox{
@@ -519,6 +519,6 @@ body{
     padding: 5px 15px;
     border-radius: 15px;
     font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
