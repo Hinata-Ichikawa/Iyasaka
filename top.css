@@ -346,6 +346,9 @@ body{
     width: 90%;
     max-width: none;
     padding: 20px 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .NewsTop_title{
