@@ -1,0 +1,133 @@
+body{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.body_container{
+  width: 1000px;
+}
+
+.Top{
+  display: flex;
+}
+
+.swiper-container {
+    width: 50%;
+    height: 90vh;
+}
+
+.Top_TextBoxPc{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper-image{
+    height: 100%;
+}
+
+.swiper-gradient{
+    height: 100%;
+}
+
+.Top_titleBox{
+  margin-top: 0;
+}
+
+.Top_logo{
+  width: 250px;
+}
+
+.Top_titleImg{
+  margin-bottom: 30px;
+}
+
+
+
+.Concept_text{
+  line-height: 4em;
+}
+
+
+
+
+
+
+.Life_contentsTitle--modifier{
+  font-size: 24px;
+}
+
+.Life_contentsText--modifier{
+  width: 30%;
+  position: absolute;
+  font-size: 13px;
+  bottom: 0;
+  right: 80px;
+}
+
+.Life_contentsImage{
+  width: 50%;
+}
+
+.Life_contents--modifier:nth-child(odd) .Life_contentsTop .Life_contentsTitle--modifier{
+  margin-right: 80px;
+}
+
+.Life_contents--modifier:nth-child(even) .Life_contentsText--modifier{
+  right: auto;
+  left: 80px;
+}
+
+
+
+
+
+
+
+.News_articles{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NewsTop_link,
+.NewsArticle_link{
+  transition: .3s;
+}
+
+.NewsTop_link:hover,
+.NewsArticle_link:hover{
+  transform: scale(1.02);
+}
+
+.NewsTop_img{
+  height: 400px;
+}
+
+.NewsArticle_img{
+  height: 200px;
+}
+
+
+
+
+
+
+
+.Access_inner{
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Access_IyasakaHouseImg{
+  width: 40%;
+}
+
+.Access_googleMap{
+    width: 70%;
+    height: 400px;
+}

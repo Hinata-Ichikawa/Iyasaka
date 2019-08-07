@@ -29,10 +29,10 @@
 
 <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
 <link href="slick/slick.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="modaal.min.css">
 
 <link rel="stylesheet" href="top.css">
-<!-- <link rel="stylesheet" href="css/sp.css"> -->
-<!-- <link rel="stylesheet" media="(min-width: 768px) and (min-height: 400px)" href="css/pc.css"> -->
+<link rel="stylesheet" media="(min-width: 768px) and (min-height: 400px)" href="pc.css">
 
 </head>
 <body>
@@ -43,36 +43,20 @@
                 <div class="swiper-wrapper">
                     <!-- 各スライド -->
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/top1.jpg" alt="">
+                        <img class="swiper-image" src="images/edit/h_10.jpg" alt="">
                         <div class="swiper-gradient"></div>
-                        <dl class="swiper_textBox">
-                            <dt class="swiper_time">8:00</dt>
-                            <dd>お迎え</dd>
-                        </dl>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/top2.jpg" alt="">
+                        <img class="swiper-image" src="images/edit/h_1.jpg" alt="">
                         <div class="swiper-gradient"></div>
-                        <dl class="swiper_textBox">
-                            <dt class="swiper_time">9:00</dt>
-                            <dd>お迎え</dd>
-                        </dl>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/top3.jpg" alt="">
+                        <img class="swiper-image" src="images/edit/h_4.jpg" alt="">
                         <div class="swiper-gradient"></div>
-                        <dl class="swiper_textBox">
-                            <dt class="swiper_time">10:00</dt>
-                            <dd>ああああああ</dd>
-                        </dl>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-image" src="images/top4.jpg" alt="">
+                        <img class="swiper-image" src="images/edit/h_9.jpg" alt="">
                         <div class="swiper-gradient"></div>
-                        <dl class="swiper_textBox">
-                            <dt class="swiper_time">11:00</dt>
-                            <dd>お迎え</dd>
-                        </dl>
                     </div>
                 </div>
 
@@ -86,23 +70,25 @@
                 <!-- スクロールバーを表示する場合 -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <div class="Top_titleBox">
-                <h1 class="Top_title"><img class="Top_titleImg" src="images/IyasakaLogo.png" alt=""></h1>
-                <p class="Top_subtitle"><img class="Top_subtitleImg" src="images/IyasakaSubLogo.png" alt=""></p>
-                <p>
-                    <img class="Top_logo" src="images/shop_logo.png" alt="">
-                </p>
-            </div>
-            <p class="Top_address">〒514-0027 三重県津市大門29-18</p>
-            <div class="Top__timeBox">
+            <div class="Top_TextBoxPc">
+              <div class="Top_titleBox">
+                  <h1 class="Top_title"><img class="Top_titleImg" src="images/IyasakaLogo.png" alt=""></h1>
+                  <p class="Top_subtitle"><img class="Top_subtitleImg" src="images/IyasakaSubLogo.png" alt=""></p>
+                  <p>
+                      <img class="Top_logo" src="images/shop_logo.png" alt="">
+                  </p>
+              </div>
+              <p class="Top_address">〒514-0027 三重県津市大門29-18</p>
+              <div class="Top__timeBox">
+                  <dl class="Top_time--modifier">
+                    <dt class="Top_timeHeading--modifier">OPEN</dt>
+                    <dd>8:30~17:30</dd>
+                </dl>
                 <dl class="Top_time--modifier">
-                <dt class="Top_timeHeading--modifier">OPEN</dt>
-                <dd>8:30~17:30</dd>
-            </dl>
-            <dl class="Top_time--modifier">
-                <dt class="Top_timeHeading--modifier">サービス提供時間</dt>
-                <dd>9:00~16:15</dd>
-            </dl>
+                    <dt class="Top_timeHeading--modifier">サービス提供時間</dt>
+                    <dd>9:00~16:15</dd>
+                </dl>
+              </div>
             </div>
         </section>
         <section class="Concept">
@@ -110,80 +96,103 @@
             <div class="Concept_greetingBox">
                 <p class="Concept_greeting">初めまして。<br>いやさかです。</p>
             </div>
-            <ul class="slider">
-                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat1.jpg" alt="image01"></li>
-                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat2.jpg" alt="image02"></li>
-                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat3.jpg" alt="image03"></li>
-                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat4.jpg" alt="image04"></li>
-                <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat5.jpg" alt="image05"></li>
-            </ul>
-            <div class="Concept_textBox">
-                <p class="Concept_text">
-                    いやさかでは、<span class="Concept_textOtherColor">人と人との関わりを大切に</span>しています。<br>
-                    地域の行事に参加することで、スタッフだけでなく<br>
-                    地域の方や子供との関わりを広げ、たくさんの人に<br>
-                    楽しんで頂ける場所を作っていきたいと思っています。<br>
-                    また、<span class="Concept_textOtherColor">暖かな家庭料理</span>をお出しすること、<br>
-                    ピクニックなどの、様々なイベントを行うことで、<br>
-                    <span class="Concept_textOtherColor">みんなで笑い合える、第二の家</span>を目指しています。
-                </p>
+            <div class="Concept__contentsPc">
+              <ul class="slider">
+                  <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat1.jpg" alt="image01"></li>
+                  <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat2.jpg" alt="image02"></li>
+                  <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat3.jpg" alt="image03"></li>
+                  <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat4.jpg" alt="image04"></li>
+                  <li class="Concept_loopList"><img class="Concept_loopImg" src="images/eat/eat5.jpg" alt="image05"></li>
+              </ul>
+              <div class="Concept_textBox">
+                  <p class="Concept_text">
+                      いやさかでは、<span class="Concept_textOtherColor">人と人との関わりを大切に</span>しています。<br>
+                      地域の行事に参加することで、スタッフだけでなく<br>
+                      地域の方や子供との関わりを広げ、たくさんの人に<br>
+                      楽しんで頂ける場所を作っていきたいと思っています。<br>
+                      また、<span class="Concept_textOtherColor">暖かな家庭料理</span>をお出しすること、<br>
+                      ピクニックなどの、様々なイベントを行うことで、<br>
+                      <span class="Concept_textOtherColor">みんなで笑い合える、第二の家</span>を目指しています。
+                  </p>
+              </div>
             </div>
         </section>
         <section class="Life">
             <h1 class="PageTitle--modifier Life_title">いやさかの日常</h1>
             <p class="Life_subTitle">日々サポーターさんと一緒に作る日常風景</p>
-            <section class="LifeContents">
-                <div class="LifeContents_textBox">
-                    <h1 class="LifeContents_title">あたたかくて美味しいごはん</h1>
-                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+            <div class="Life_contentsPc">
+              <section class="LifeEat Life_contents--modifier">
+                <div class="Life_contentsTop">
+                  <h1 class="LifeEat_title Life_contentsTitle--modifier">毎日が、<br>あたたかくて、<br>美味しいごはん。</h1>
+                  <img class="Life_contentsImage" src="images/eat/eat1.jpg" alt="">
                 </div>
-                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/eat/eat2.jpg" alt=""></p>
-            </section>
-            <section class="LifeContents">
-                <div class="LifeContents_textBox">
-                    <h1 class="LifeContents_title">美味しくてあたたかいごはん</h1>
-                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+                <p class="Life_contentsText--modifier">ああああああああああああああああああああああああああああああああああああああああああああ</p>
+              </section>
+              <section class="Life_eat Life_contents--modifier">
+                <div class="Life_contentsTop">
+                  <h1 class="Life_contentsTitle--modifier">毎日が、<br>あたたかくて、<br>美味しいごはん。</h1>
+                  <img class="Life_contentsImage" src="images/edit/h_8.jpg" alt="">
                 </div>
-                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/life.jpg" alt=""></p>
-            </section>
-            <section class="LifeContents">
-                <div class="LifeContents_textBox">
-                    <h1 class="LifeContents_title">美味しくてあたたかいごはん</h1>
-                    <p class="LifeContents_text">ああああああああああああああああああああああああああああああああああああああああ</p>
+                <p class="Life_contentsText--modifier">ああああああああああああああああああああああああああああああああああああああああああああ</p>
+              </section>
+              <section class="Life_eat Life_contents--modifier">
+                <div class="Life_contentsTop">
+                  <h1 class="Life_contentsTitle--modifier">毎日が、<br>あたたかくて、<br>美味しいごはん。</h1>
+                  <img class="Life_contentsImage" src="images/edit/h_13.jpg" alt="">
                 </div>
-                <p class="LifeContents_eatImgBox"><img class="LifeContents_eatImg" src="images/life2.jpg" alt=""></p>
-            </section>
-            <div class="LifeContents_bgColor"></div>
+                <p class="Life_contentsText--modifier">ああああああああああああああああああああああああああああああああああああああああああああ</p>
+              </section>
+            </div>
         </section>
         <section class="News">
             <h1 class="PageTitle--modifier">お知らせ</h1>
             <div class="News_articles">
                 <article class="NewsTop">
-                <a class="NewsTop_link" href="">
+                    <a href="#modal_Top" class="NewsTop_link modal">
+                        <h1 class="NewsTop_title">ホームページができました！</h1>
+                        <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <div class="NewsTop_dateTagBox">
+                            <time class="NewsTop_date" datetime="2019-07-03">3 July 2019</time>
+                            <p class="NewsTop_tag">NEWS</p>
+                        </div>
+                        <img class="NewsTop_img" src="images/shop_logo.png" alt="">
+                    </a>
+                </article>
+                <article id="modal_Top" style="display:none;">
                     <h1 class="NewsTop_title">ホームページができました！</h1>
                     <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                     <div class="NewsTop_dateTagBox">
                         <time class="NewsTop_date" datetime="2019-07-03">3 July 2019</time>
                         <p class="NewsTop_tag">NEWS</p>
                     </div>
-                    <img class="NewsTop_img" src="images/slick1.jpg" alt="">
-                </a>
                 </article>
                 <article class="NewsArticle">
-                    <a class="NewsArticle_link" href="">
+                    <a class="NewsArticle_link modal" href="#modal_Article1">
+                        <h1 class="NewsArticle_title">ホームページができました！</h1>
+                        <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                        <img class="NewsArticle_img" src="images/shop_logo.png" alt="">
+                    </a>
+                </article>
+                <article id="modal_Article1" style="display:none;">
+                    <h1 class="NewsArticle_title">ホームページができました！</h1>
+                    <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                    <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
+                </article>
+                <article class="NewsArticle">
+                    <a class="NewsArticle_link modal" href="#modal_Article2">
                         <h1 class="NewsArticle_title">ホームページができました！</h1>
                         <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                         <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
                         <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                     </a>
                 </article>
-                <article class="NewsArticle">
-                    <a class="NewsArticle_link" href="">
-                        <h1 class="NewsArticle_title">ホームページができました！</h1>
-                        <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                        <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
-                        <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
-                    </a>
+                <article id="modal_Article2" style="display:none;">
+                    <h1 class="NewsArticle_title">ホームページができました！</h1>
+                    <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                    <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                 </article>
             </div>
             <!-- <a class="News_listLink" href="">お知らせリスト</a> -->
@@ -241,7 +250,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/modaal.min.js"></script>
     <script type="text/javascript" src="js/top.js"></script>
 </body>

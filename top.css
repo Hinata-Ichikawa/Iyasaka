@@ -8,6 +8,11 @@
     font-family: "はれのそら明朝";
 }
 
+@font-face {
+  src: url("./font/姫明朝ともえごぜんmini.otf");
+  font-family: "姫明朝ともえごぜんmini";
+}
+
 *{
     letter-spacing: .15em;
     margin: 0;
@@ -17,11 +22,11 @@
 
 body{
     color: rgb(63, 25, 0);
-    /* background-image: url(images/Mokume.png);
+    background-image: url(images/washi.jpg);
     background-size: cover;
     background-repeat: repeat-y;
-    background-position: top center; */
-    background-color: rgb(223, 212, 196);
+    background-position: top center;
+    /* background-color: rgb(223, 212, 196); */
     padding-top: 15px;
     padding-bottom: 15px;
     overflow-x: hidden;
@@ -30,7 +35,7 @@ body{
 .body_container{
     background-color: rgb(253, 252, 249);
     margin: 0 auto;
-    width: 95%;
+    width: 94%;
     border-radius: 10px;
     /* filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, .3)); */
 }
@@ -244,81 +249,56 @@ body{
 }
 
 .Life_subTitle{
-    text-align: center;
-    font-size: 12px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 40px;
 }
 
-.LifeContents{
-    position: relative;
-    height: 320px;
+.Life_contents--modifier{
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.LifeContents_textBox{
-    position: absolute;
-    width: 75%;
-    right: 0;
-    top: 200px;
-    background-color: rgba(255, 255, 255);
-    padding: 10px;
-    z-index: 5;
+.Life_contentsTop{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
-.LifeContents:nth-child(even) .LifeContents_textBox{
-    left: 0;
+.Life_contents--modifier:nth-child(even) .Life_contentsTop{
+  flex-direction: row;
+}
+
+.Life_contentsTitle--modifier{
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  line-height: 2.5em;
+  font-size: 14px;
+  font-family: "姫明朝ともえごぜんmini";
+}
+
+.Life_contentsImage{
+  width: 50%;
+}
+
+.Life_contentsText--modifier{
+  font-size: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 
-.LifeContents_title{
-    font-size: 14px;
-    /* color: rgb(184, 134, 11); */
-    letter-spacing: .15em;
+
+.Life_contents--modifier:nth-child(odd) .Life_contentsTop .Life_contentsTitle--modifier{
+  margin-right: 20px;
 }
 
-.LifeContents_text{
-    font-size: 12px;
-}
 
-.LifeContents_eatImgBox{
-    position: absolute;
-    width: 90%;
-    height: 230px;
-}
 
-.LifeContents:nth-child(odd) .LifeContents_eatImgBox{
-    left: 0;
-}
 
-.LifeContents:nth-child(even) .LifeContents_eatImgBox{
-    right: 0;
-}
-
-.LifeContents_eatImg{
-  box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top: 2px dashed rgb(184, 134, 11, .5);
-    border-right: 2px dashed rgb(184, 134, 11, .5);
-    border-bottom: 2px dashed rgb(184, 134, 11, .5);
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-.LifeContents:nth-child(even) .LifeContents_eatImg{
-    border-left: 2px dashed rgb(184, 134, 11, .5);
-    border-right: none;
-    padding-left: 10px;
-    padding-right: 0;
-}
-
-/* .LifeContents_bgColor{
-  position: absolute;
-  width: 90%;
-  height: 80%;
-  background-color: rgb(184, 134, 11);
-} */
 
 
 
