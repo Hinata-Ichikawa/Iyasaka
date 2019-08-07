@@ -29,7 +29,8 @@
 
 <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
 <link href="slick/slick.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="modaal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 
 <link rel="stylesheet" href="top.css">
 <link rel="stylesheet" media="(min-width: 768px) and (min-height: 400px)" href="pc.css">
@@ -107,9 +108,9 @@
               <div class="Concept_textBox">
                   <p class="Concept_text">
                       いやさかでは、<span class="Concept_textOtherColor">人と人との関わりを大切に</span>しています。<br>
-                      地域の行事に参加することで、スタッフだけでなく<br>
-                      地域の方や子供との関わりを広げ、たくさんの人に<br>
-                      楽しんで頂ける場所を作っていきたいと思っています。<br>
+                      スタッフだけでなく、地域の方や子供との関わりを広げ、<br>
+                      たくさんの人に楽しんで頂ける場所を<br>
+                      作っていきたいと思っています。<br>
                       また、<span class="Concept_textOtherColor">暖かな家庭料理</span>をお出しすること、<br>
                       ピクニックなどの、様々なイベントを行うことで、<br>
                       <span class="Concept_textOtherColor">みんなで笑い合える、第二の家</span>を目指しています。
@@ -148,51 +149,54 @@
             <h1 class="PageTitle--modifier">お知らせ</h1>
             <div class="News_articles">
                 <article class="NewsTop">
-                    <a href="#modal_Top" class="NewsTop_link modal">
-                        <h1 class="NewsTop_title">ホームページができました！</h1>
-                        <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <a class="NewsTop_link" href="#NewsTop" rel="modal:open">
                         <div class="NewsTop_dateTagBox">
                             <time class="NewsTop_date" datetime="2019-07-03">3 July 2019</time>
                             <p class="NewsTop_tag">NEWS</p>
                         </div>
                         <img class="NewsTop_img" src="images/shop_logo.png" alt="">
+                        <h1 class="NewsTop_title">ホームページができました！</h1>
+                        <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>                        
                     </a>
                 </article>
-                <article id="modal_Top" style="display:none;">
-                    <h1 class="NewsTop_title">ホームページができました！</h1>
-                    <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                <article id="NewsTop" class="modal">
                     <div class="NewsTop_dateTagBox">
                         <time class="NewsTop_date" datetime="2019-07-03">3 July 2019</time>
                         <p class="NewsTop_tag">NEWS</p>
                     </div>
+                    <img class="NewsTop_img" src="images/shop_logo.png" alt="">
+                    <h1 class="NewsTop_title">ホームページができました！</h1>
+                    <p class="NewsTop_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>                        
                 </article>
+
                 <article class="NewsArticle">
-                    <a class="NewsArticle_link modal" href="#modal_Article1">
-                        <h1 class="NewsArticle_title">ホームページができました！</h1>
-                        <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <a class="NewsArticle_link" href="#NewsArticleLeft" rel="modal:open">
                         <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
                         <img class="NewsArticle_img" src="images/shop_logo.png" alt="">
-                    </a>
-                </article>
-                <article id="modal_Article1" style="display:none;">
-                    <h1 class="NewsArticle_title">ホームページができました！</h1>
-                    <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                    <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
-                    <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
-                </article>
-                <article class="NewsArticle">
-                    <a class="NewsArticle_link modal" href="#modal_Article2">
                         <h1 class="NewsArticle_title">ホームページができました！</h1>
                         <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                        <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
-                        <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                     </a>
                 </article>
-                <article id="modal_Article2" style="display:none;">
+                <article id="NewsArticleLeft" class="modal">
+                        <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                        <img class="NewsArticle_img" src="images/shop_logo.png" alt="">
+                        <h1 class="NewsArticle_title">ホームページができました！</h1>
+                        <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                </article>
+
+                <article class="NewsArticle">
+                    <a class="NewsArticle_link" href="#NewsArticleRight" rel="modal:open">
+                        <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                        <img class="NewsArticle_img" src="images/shop_logo.png" alt="">
+                        <h1 class="NewsArticle_title">ホームページができました！</h1>
+                        <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    </a>
+                </article>
+                <article id="NewsArticleRight" class="modal">
+                    <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
+                    <img class="NewsArticle_img" src="images/shop_logo.png" alt="">
                     <h1 class="NewsArticle_title">ホームページができました！</h1>
                     <p class="NewsArticle_text">詳細ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                    <time class="NewsArticle_date" datetime="2019-07-03">3 July 2019</time>
-                    <img class="NewsArticle_img" src="images/slick1.jpg" alt="">
                 </article>
             </div>
             <!-- <a class="News_listLink" href="">お知らせリスト</a> -->
@@ -252,6 +256,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/modaal.min.js"></script>
+    <!-- <script src="js/modaal.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script type="text/javascript" src="js/top.js"></script>
 </body>

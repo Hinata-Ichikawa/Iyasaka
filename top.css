@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  src: url("./font/姫明朝ともえごぜんmini.otf");
-  font-family: "姫明朝ともえごぜんmini";
+  src: url("./font/mini.otf");
+  font-family: "mini";
 }
 
 *{
@@ -126,6 +126,7 @@ body{
 .Top_time--modifier{
     display: flex;
     font-size: 14px;
+    justify-content: center;
 }
 
 .Top_timeHeading--modifier{
@@ -275,7 +276,7 @@ body{
   writing-mode: vertical-rl;
   line-height: 2.5em;
   font-size: 14px;
-  font-family: "姫明朝ともえごぜんmini";
+  font-family: "mini";
 }
 
 .Life_contentsImage{
@@ -326,11 +327,25 @@ body{
 .NewsTop_link,
 .NewsArticle_link{
     display: flex;
+}
+
+.NewsTop_link,
+.NewsArticle_link,
+.modal{
     flex-direction: column;
     color: rgb(63, 25, 0);
     text-decoration: none;
     position: relative;
     width: 100%;
+}
+
+.modal{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: none;
+    padding: 20px 5px;
 }
 
 .NewsTop_title{
@@ -346,6 +361,13 @@ body{
     white-space: nowrap;
     overflow: hidden;
 }
+
+.modal .NewsTop_text,
+.modal .NewsArticle_text{
+    text-overflow: unset;
+    white-space: unset;
+}
+
 
 .NewsTop_dateTagBox{
     order: -2;
@@ -368,11 +390,12 @@ body{
     padding-left: 20px;
 }
 
-.NewsTop_img{
+.NewsTop_img,
+.modal .NewsArticle_img{
     order: -1;
     width: 100%;
     height: 240px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 15px;
 }
 
@@ -418,7 +441,7 @@ body{
     order: -1;
     width: 100%;
     height: 120px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 

@@ -102,13 +102,20 @@ body{
 }
 
 .NewsTop_img{
-  height: 400px;
+  max-height: 300px;
 }
 
 .NewsArticle_img{
   height: 200px;
 }
 
+.modal{
+  max-width: 700px;
+  padding: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
 
 
