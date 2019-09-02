@@ -281,6 +281,8 @@ body{
 
 .Life_contentsImage{
   width: 50%;
+  height: 120px;
+  object-fit: cover;
 }
 
 .Life_contentsText--modifier{

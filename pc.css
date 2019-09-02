@@ -67,7 +67,7 @@ body{
 }
 
 .Life_contentsImage{
-  width: 50%;
+  height: 360px;
 }
 
 .Life_contents--modifier:nth-child(odd) .Life_contentsTop .Life_contentsTitle--modifier{
