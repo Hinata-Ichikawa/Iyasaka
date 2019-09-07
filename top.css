@@ -121,6 +121,7 @@ body{
 
 .Top__timeBox{
     display: inline-block;
+    margin-top: 10px;
 }
 
 .Top_time--modifier{
@@ -503,6 +504,13 @@ body{
     margin-right: 2px;
 }
 
+.Profile_InstagramText{
+    font-size: 14px;
+}
+
+.Profile_InstagramLink{
+    color: rgb(63, 25, 0);
+}
 
 
 
